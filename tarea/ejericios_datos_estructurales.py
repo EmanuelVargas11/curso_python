@@ -67,4 +67,6 @@ valor_1_bool = bool(ingrese_valor_1)
 valor_2_bool = bool(ingrese_valor_2)
 
 lista = list()
-datos_bool_lista = lista.append(valor_2_bool)
+lista.append(f'el primer valor es: {ingrese_valor_1} = {valor_1_bool}, el segundo valor es: {ingrese_valor_2} = {valor_2_bool}')
+
+print(lista)
