@@ -97,7 +97,7 @@
 # ingrese_nota = float(input('ingrese su nota decimal: '))
 # ingresar_alumno_activo = int(input('Alumno activo ingrese el 1, de lo contrario, 0: '))
 
-# alumno = ingrese_nombre
+# alumno = ingrese_nombre.capitalize()
 # nota_alumno = ingrese_nota
 # alumno_activo = ingresar_alumno_activo
 
@@ -112,16 +112,32 @@
 # ********** EJERCICIO_9 **********
 # Ingresar tres colores y guardarlos en una lista; luego mostrar la lista.
 
-print('ingrese 3 colores a continuacion: ')
-ingrese_color_1 = input('ingrese el color 1: ')
-ingrese_color_2 = input('ingrese el color 2: ')
-ingrese_color_3 = input('ingrese el color 3: ')
+# print('ingrese 3 colores a continuacion: ')
+# ingrese_color_1 = input('ingrese el color 1: ')
+# ingrese_color_2 = input('ingrese el color 2: ')
+# ingrese_color_3 = input('ingrese el color 3: ')
 
-color_1 = ingrese_color_1
-color_2 = ingrese_color_2
-color_3 = ingrese_color_3
+# color_1 = ingrese_color_1.capitalize()
+# color_2 = ingrese_color_2.capitalize()
+# color_3 = ingrese_color_3.capitalize()
 
-lista_colores = list()
-lista_colores.extend({color_1, color_2, color_3})
+# lista_colores = list()
+# lista_colores.extend({color_1, color_2, color_3})
 
-print(lista_colores)
+# print(lista_colores)
+
+# ********** EJERCICIO_10 **********
+# Pedir dos números enteros y guardarlos como un par ordenado en una tupla; luego mostrarla.
+
+# ingresar_num_entero_1 = int(input('Ingrese el primer entero: '))
+# ingresar_num_entero_2 = int(input('Ingrese un numero entero: '))
+
+# dato_num_entero_1 = ingresar_num_entero_1
+# dato_num_entero_2 = ingresar_num_entero_2
+
+# lista_ordenada = list()
+# lista_ordenada.extend({dato_num_entero_1, dato_num_entero_2})
+# lista_ordenada.sort()
+
+# mostrar_datos = tuple(lista_ordenada)
+# print(mostrar_datos)
