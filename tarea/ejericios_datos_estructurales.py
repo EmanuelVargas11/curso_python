@@ -149,20 +149,20 @@
 # Ingresar cuatro nombres de amigos y guardarlos en un set; luego
 #  mostrar el conjunto.
 
-# print('\nIngrese por cada input el nombre de un Amigo:')
-# input_amigo_1 = input('Ingrese el 1er nombre: ')
-# input_amigo_2 = input('Ingrese el 2do nombre: ')
-# input_amigo_3 = input('Ingrese el 3er nombre: ')
-# input_amigo_4 = input('Ingrese el 4to nombre: ')
+print('\nIngrese por cada input el nombre de un Amigo:\n')
+input_amigo_1 = input('Ingrese el 1er nombre: ')
+input_amigo_2 = input('Ingrese el 2do nombre: ')
+input_amigo_3 = input('Ingrese el 3er nombre: ')
+input_amigo_4 = input('Ingrese el 4to nombre: ')
 
-# amigo_1 = input_amigo_1.capitalize()
-# amigo_2 = input_amigo_2.capitalize()
-# amigo_3 = input_amigo_3.capitalize()
-# amigo_4 = input_amigo_4.capitalize()
+amigo_1 = input_amigo_1.capitalize()
+amigo_2 = input_amigo_2.capitalize()
+amigo_3 = input_amigo_3.capitalize()
+amigo_4 = input_amigo_4.capitalize()
 
-# set_amigos = set()
-# set_amigos.update({amigo_1, amigo_2, amigo_3, amigo_4})
-# print(f'\nTus amigos son: {set_amigos}\n')
+set_amigos = set()
+set_amigos.update({amigo_1, amigo_2, amigo_3, amigo_4})
+print(f'\nTus amigos son: {set_amigos}')
 
 # ********** EJERCICIO_12 **********
 # Solicitar el título y autor de un libro, guardarlos en un diccionario y mostrarlo.
@@ -218,6 +218,8 @@
 # set_datos.update({numero_ingresado, numero_ingresado_str})
 # print(set_datos)
 
+# ********** EJERCICIOS MATEMATICOS **********
+# ********** EJERCICIO_4 **********
 # Ingresar la palabra "True" o "False", convertirla a bool, guardarla
 # en un diccionario junto con la palabra original y mostrar el diccionario.
 
