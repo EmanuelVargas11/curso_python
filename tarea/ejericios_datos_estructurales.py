@@ -191,3 +191,44 @@
 # mostrar_datos = ['Original', numero_entero]
 # mostrar_datos.append(f'Decimal: {numero_entero_decimal}')
 # print(mostrar_datos)
+
+# ********** EJERCICIOS MATEMATICOS **********
+# ********** EJERCICIO_2 **********
+# Solicitar un número decimal, convertirlo a int, guardarlo en una tupla
+# junto con el valor original y mostrar la tupla.
+
+# input_decimal = float(input('Ingrese un n° decimal: '))
+# dato_decimal = input_decimal
+# decimal_a_entero = int(input_decimal)
+# datos = ['Original:', dato_decimal, 'Entero:', decimal_a_entero]
+
+# datos_tupla = tuple(datos)
+# print(datos_tupla)
+
+# ********** EJERCICIOS MATEMATICOS **********
+# ********** EJERCICIO_3 **********
+# Pedir al usuario un número entero, convertirlo a string, guardarlo en
+# un set junto con el entero y mostrar el conjunto.
+
+# ingresar_entero = int(input('Ingrese un n° entero: '))
+# numero_ingresado = ingresar_entero
+# numero_ingresado_str = str(numero_ingresado)
+
+# set_datos = set()
+# set_datos.update({numero_ingresado, numero_ingresado_str})
+# print(set_datos)
+
+# Ingresar la palabra "True" o "False", convertirla a bool, guardarla
+# en un diccionario junto con la palabra original y mostrar el diccionario.
+
+# ingrese_palabra = input("ingrese la palabra 'True' o 'false': ") 
+# palabra = ingrese_palabra
+
+# palabra_bool = bool(ingrese_palabra)
+
+# dicc_palabra = {
+#     'original' : palabra,
+#     'booleano' : palabra_bool
+# }
+
+# print(dicc_palabra)
