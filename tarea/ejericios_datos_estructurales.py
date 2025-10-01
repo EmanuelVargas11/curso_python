@@ -74,7 +74,9 @@
 
 # coordenada_x = ingresar_decimal_x
 # coordenada_y = ingresar_decimal_y
-# tupla_coordenadas = ('x:', coordenada_x, 'y:', coordenada_y)
+# lista_cordenadas = ['x:', coordenada_x, 'y:', coordenada_y]
+
+# tupla_coordenadas = tuple(lista_cordenadas)
 
 # print(tupla_coordenadas)
 
@@ -127,10 +129,11 @@
 # print(lista_colores)
 
 # ********** EJERCICIO_10 **********
-# Pedir dos números enteros y guardarlos como un par ordenado en una tupla; luego mostrarla.
+# Pedir dos números enteros y guardarlos como un 
+# par ordenado en una tupla; luego mostrarla.
 
-# ingresar_num_entero_1 = int(input('Ingrese el primer entero: '))
-# ingresar_num_entero_2 = int(input('Ingrese un numero entero: '))
+# ingresar_num_entero_1 = int(input('Ingrese el primer n° entero: '))
+# ingresar_num_entero_2 = int(input('Ingrese el segundo n° entero: '))
 
 # dato_num_entero_1 = ingresar_num_entero_1
 # dato_num_entero_2 = ingresar_num_entero_2
@@ -140,4 +143,51 @@
 # lista_ordenada.sort()
 
 # mostrar_datos = tuple(lista_ordenada)
+# print(mostrar_datos)
+
+# ********** EJERCICIO_11 **********
+# Ingresar cuatro nombres de amigos y guardarlos en un set; luego
+#  mostrar el conjunto.
+
+# print('\nIngrese por cada input el nombre de un Amigo:')
+# input_amigo_1 = input('Ingrese el 1er nombre: ')
+# input_amigo_2 = input('Ingrese el 2do nombre: ')
+# input_amigo_3 = input('Ingrese el 3er nombre: ')
+# input_amigo_4 = input('Ingrese el 4to nombre: ')
+
+# amigo_1 = input_amigo_1.capitalize()
+# amigo_2 = input_amigo_2.capitalize()
+# amigo_3 = input_amigo_3.capitalize()
+# amigo_4 = input_amigo_4.capitalize()
+
+# set_amigos = set()
+# set_amigos.update({amigo_1, amigo_2, amigo_3, amigo_4})
+# print(f'\nTus amigos son: {set_amigos}\n')
+
+# ********** EJERCICIO_12 **********
+# Solicitar el título y autor de un libro, guardarlos en un diccionario y mostrarlo.
+
+# ingrese_titulo_libro = input('Ingrese el titulo del libro: ')
+# ingrese_autor_libro = input('Ingrese el autor del libro: ')
+
+# titulo_libro = ingrese_titulo_libro.title()
+# autor_libro = ingrese_autor_libro.title()
+
+# dicc_libros = {
+#     'Titulo' : titulo_libro,
+#     'Autor' : autor_libro
+# }
+# print(dicc_libros)
+
+# ********** EJERCICIOS MATEMATICOS **********
+# ********** EJERCICIO_1 **********
+# Pedir un número entero con input(), convertirlo a float y guardarlo en una
+# lista junto con el valor original; luego mostrar la lista.
+
+# ingrese_numero_entero = input('Ingrese un n° entero: ')
+# numero_entero_decimal = float(ingrese_numero_entero)
+# numero_entero = int(ingrese_numero_entero)
+
+# mostrar_datos = ['Original', numero_entero]
+# mostrar_datos.append(f'Decimal: {numero_entero_decimal}')
 # print(mostrar_datos)
