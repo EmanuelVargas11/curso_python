@@ -2,11 +2,13 @@
 # Pedir tres números enteros al usuario y guardarlos en
 # una lista, luego mostrar la lista completa
 
-# numeros_enteros = input('ingrese tres numeros enteros, separados con , : ')
-# lista_num_enteros = []
-# lista_completa_num_enteros = lista_num_enteros.append(numeros_enteros)
+# numeros_enteros_1 = input('ingrese un numeros enteros: ')
+# numeros_enteros_2 = input('ingrese un numeros enteros: ')
+# numeros_enteros_3 = input('ingrese un numeros enteros: ')
 
-# # print(f'Ingresaste estos Números: {lista_num_enteros}')
+# lista_num_enteros = [numeros_enteros_1, numeros_enteros_2, numeros_enteros_3]
+
+# print(f'Ingresaste estos Números: {lista_num_enteros}')
 
 # ********** EJERCICIO_2 **********
 # Solicitar al usuario su nombre y edad, guardarlos en una tupla y mostrarla.
@@ -15,7 +17,7 @@
 # edad = int(input('Ingrese su edad: '))
 # nombre = ingrese_nombre.capitalize()
 
-# datos_usuario = (f'Bienvenido/a {nombre}, su edad es: {edad} años')
+# datos_usuario = (nombre, edad)
 
 # print(datos_usuario)
 
@@ -30,27 +32,25 @@
 # segunda_palabra = ingrese_palabras_2
 # ultima_palabra = ingrese_palabras_3
 
-# datos = set()
-# datos.update({primer_palabra, segunda_palabra, ultima_palabra})
+# # guardar valores en un set
+# datos = {primer_palabra, segunda_palabra, ultima_palabra}
+
+# # mostrar el conjunto
 # print(datos)
 
 # ********** EJERCICIO_4 **********
 # Solicitar el nombre y el precio de un producto, guardarlos en un
 # diccionario y mostrarlo.
 
-# solicitar_producto = input('ingrese el producto solicitado: ')
-# solicitar_precio = int(input('ingrese el precio del producto: $'))
-
-# producto_ingresado = solicitar_producto
-# precio_dado = solicitar_precio
+# producto_ingresado = input('ingrese el producto solicitado: ')
+# precio_dado = int(input('ingrese el precio del producto: $'))
 
 # product_dicc = {
 #     "producto:" : producto_ingresado,
 #     "precio" : precio_dado
 # }
 
-# datos_dicc = product_dicc.items()
-# print(datos_dicc)
+# print(product_dicc)
 
 # ********** EJERCICIO_5 **********
 # Ingresar dos valores (0 o 1), convertirlos a booleanos,
@@ -62,8 +62,8 @@
 # valor_1_bool = bool(ingrese_valor_1)
 # valor_2_bool = bool(ingrese_valor_2)
 
-# lista = list()
-# lista.append(f'el primer valor es: {ingrese_valor_1} = {valor_1_bool}, el segundo valor es: {ingrese_valor_2} = {valor_2_bool}')
+# lista = [valor_1_bool, valor_2_bool]
+
 # print(lista)
 
 # ********** EJERCICIO_6 **********
@@ -74,6 +74,7 @@
 
 # coordenada_x = ingresar_decimal_x
 # coordenada_y = ingresar_decimal_y
+
 # lista_cordenadas = ['x:', coordenada_x, 'y:', coordenada_y]
 
 # tupla_coordenadas = tuple(lista_cordenadas)
@@ -83,37 +84,37 @@
 # ********** EJERCICIO_7 **********
 # Solicitar dos edades y guardarlas en un set; luego mostrar el conjunto.
 
-# ingreso_edad_1 = int(input('ingrese su edad: '))
-# ingreso_edad_2 = int(input('ingrese otra edad: '))
-# edad_1 = ingreso_edad_1
-# edad_2 = ingreso_edad_2
+# edad_1 = int(input('ingrese su edad: '))
+# edad_2 = int(input('ingrese otra edad: '))
 
-# set_edad = set()
-# set_edad.update({f'edad 1: {edad_1}, edad 2: {edad_2}'})
+# set_edad = {edad_1, edad_2}
+
 # print(set_edad)
 
 # ********** EJERCICIO_8 **********
 # Pedir el nombre de un alumno, su nota decimal y si está activo (0 o 1); guardarlos en un diccionario y mostrarlo.
 
+# solicitar al usuario el nombre, la nota decimal y si aun esta activo
 # ingrese_nombre = input('ingrese su nombre: ')
-# ingrese_nota = float(input('ingrese su nota decimal: '))
-# ingresar_alumno_activo = int(input('Alumno activo ingrese el 1, de lo contrario, 0: '))
+# nota_alumno = float(input('ingrese su nota decimal: '))
+# alumno_activo = int(input('Alumno activo ingrese el 1, de lo contrario, 0: '))
 
 # alumno = ingrese_nombre.capitalize()
-# nota_alumno = ingrese_nota
-# alumno_activo = ingresar_alumno_activo
 
+# guardar en un diccionario los valores
 # datos_alumno = {
-#     'alumno' : ingrese_nombre,
+#     'alumno' : alumno,
 #     'nota' : nota_alumno,
 #     'activo' : alumno_activo
 # }
 
+# mostrar el diccionario
 # print(datos_alumno.items())
 
 # ********** EJERCICIO_9 **********
 # Ingresar tres colores y guardarlos en una lista; luego mostrar la lista.
 
+# # solicitar al usuario que ingrese tres colores
 # print('ingrese 3 colores a continuacion: ')
 # ingrese_color_1 = input('ingrese el color 1: ')
 # ingrese_color_2 = input('ingrese el color 2: ')
@@ -123,46 +124,50 @@
 # color_2 = ingrese_color_2.capitalize()
 # color_3 = ingrese_color_3.capitalize()
 
-# lista_colores = list()
-# lista_colores.extend({color_1, color_2, color_3})
-
+#  # guardar en una lista
+# lista_colores = [color_1, color_2, color_3]
 # print(lista_colores)
 
 # ********** EJERCICIO_10 **********
-# Pedir dos números enteros y guardarlos como un 
+# Pedir dos números enteros y guardarlos como un
 # par ordenado en una tupla; luego mostrarla.
 
-# ingresar_num_entero_1 = int(input('Ingrese el primer n° entero: '))
-# ingresar_num_entero_2 = int(input('Ingrese el segundo n° entero: '))
+# solicitar al usuario dos números enteros
+# dato_num_entero_1 = int(input('Ingrese el primer n° entero: '))
+# dato_num_entero_2 = int(input('Ingrese el segundo n° entero: '))
 
-# dato_num_entero_1 = ingresar_num_entero_1
-# dato_num_entero_2 = ingresar_num_entero_2
-
-# lista_ordenada = list()
-# lista_ordenada.extend({dato_num_entero_1, dato_num_entero_2})
+# ordenar los valores
+# lista_ordenada = [dato_num_entero_1, dato_num_entero_2]
 # lista_ordenada.sort()
 
+# guardarlo en una tupla
 # mostrar_datos = tuple(lista_ordenada)
+
+# mostrar el valor
 # print(mostrar_datos)
 
 # ********** EJERCICIO_11 **********
 # Ingresar cuatro nombres de amigos y guardarlos en un set; luego
 #  mostrar el conjunto.
 
-print('\nIngrese por cada input el nombre de un Amigo:\n')
-input_amigo_1 = input('Ingrese el 1er nombre: ')
-input_amigo_2 = input('Ingrese el 2do nombre: ')
-input_amigo_3 = input('Ingrese el 3er nombre: ')
-input_amigo_4 = input('Ingrese el 4to nombre: ')
+# # Solicitar el nombre de cuatro amigos al usuario
+# input_amigo_1 = input('Ingrese el 1er nombre: ')
+# input_amigo_2 = input('Ingrese el 2do nombre: ')
+# input_amigo_3 = input('Ingrese el 3er nombre: ')
+# input_amigo_4 = input('Ingrese el 4to nombre: ')
 
-amigo_1 = input_amigo_1.capitalize()
-amigo_2 = input_amigo_2.capitalize()
-amigo_3 = input_amigo_3.capitalize()
-amigo_4 = input_amigo_4.capitalize()
+# # a cada valor se le asigna la propiedad capitalize()
+# amigo_1 = input_amigo_1.capitalize()
+# amigo_2 = input_amigo_2.capitalize()
+# amigo_3 = input_amigo_3.capitalize()
+# amigo_4 = input_amigo_4.capitalize()
 
-set_amigos = set()
-set_amigos.update({amigo_1, amigo_2, amigo_3, amigo_4})
-print(f'\nTus amigos son: {set_amigos}')
+# # guardar los valores en un set
+# set_amigos = (amigo_1, amigo_2, amigo_3, amigo_4)
+
+# # mostrar el conjunto
+# print('Tus amigos son:', set_amigos)
+
 
 # ********** EJERCICIO_12 **********
 # Solicitar el título y autor de un libro, guardarlos en un diccionario y mostrarlo.
@@ -186,10 +191,11 @@ print(f'\nTus amigos son: {set_amigos}')
 
 # ingrese_numero_entero = input('Ingrese un n° entero: ')
 # numero_entero_decimal = float(ingrese_numero_entero)
+
 # numero_entero = int(ingrese_numero_entero)
 
-# mostrar_datos = ['Original', numero_entero]
-# mostrar_datos.append(f'Decimal: {numero_entero_decimal}')
+# mostar_datos = [numero_entero, numero_entero_decimal]
+
 # print(mostrar_datos)
 
 # ********** EJERCICIOS MATEMATICOS **********
@@ -197,12 +203,16 @@ print(f'\nTus amigos son: {set_amigos}')
 # Solicitar un número decimal, convertirlo a int, guardarlo en una tupla
 # junto con el valor original y mostrar la tupla.
 
-# input_decimal = float(input('Ingrese un n° decimal: '))
-# dato_decimal = input_decimal
-# decimal_a_entero = int(input_decimal)
-# datos = ['Original:', dato_decimal, 'Entero:', decimal_a_entero]
+# # solicitar un número decimal al usuario
+# numero_decimal = float(input('Ingrese un n° decimal: '))
 
-# datos_tupla = tuple(datos)
+# # convertir el número a entero
+# decimal_a_entero = int(numero_decimal)
+
+# # guardar los datos en una tupla
+# datos_tupla = (numero_decimal, decimal_a_entero)
+
+# #mostrar la tupla
 # print(datos_tupla)
 
 # ********** EJERCICIOS MATEMATICOS **********
@@ -214,8 +224,8 @@ print(f'\nTus amigos son: {set_amigos}')
 # numero_ingresado = ingresar_entero
 # numero_ingresado_str = str(numero_ingresado)
 
-# set_datos = set()
-# set_datos.update({numero_ingresado, numero_ingresado_str})
+# set_datos = {numero_ingresado, numero_ingresado_str}
+
 # print(set_datos)
 
 # ********** EJERCICIOS MATEMATICOS **********
@@ -223,7 +233,7 @@ print(f'\nTus amigos son: {set_amigos}')
 # Ingresar la palabra "True" o "False", convertirla a bool, guardarla
 # en un diccionario junto con la palabra original y mostrar el diccionario.
 
-# ingrese_palabra = input("ingrese la palabra 'True' o 'false': ") 
+# ingrese_palabra = input("ingrese la palabra 'True' o 'false': ")
 # palabra = ingrese_palabra
 
 # palabra_bool = bool(ingrese_palabra)
