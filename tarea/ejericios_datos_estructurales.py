@@ -244,3 +244,23 @@
 # }
 
 # print(dicc_palabra)
+
+# ********** EJERCICIOS MATEMATICOS **********
+# ********** EJERCICIO_5 **********
+
+# Solicitar un número entero y convertirlo a string y a float;
+# guardar los tres (int, str, float) en una lista y mostrarla.
+
+# solicitar un numero entero al usuario
+numero_entero = int(input('Ingrese un numero entero: '))
+
+# convertir a string y decimal
+str_entero = str(numero_entero)
+decimal = float(numero_entero)
+
+# guardar los 3 en una lista
+datos = [numero_entero, str_entero, decimal]
+
+# mostrar lista
+print(datos)
+
